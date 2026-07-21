@@ -11,7 +11,9 @@ export function SiteEffects() {
       if (target) window.dispatchEvent(new CustomEvent("granjaflow:cta", { detail: { id: target.dataset.track } }));
     };
     document.addEventListener("click", onClick);
-    if (reduce) return () => document.removeEventListener("click", onClick);
+    // No celular, mantemos rolagem nativa e conteúdo estável. As animações
+    // completas ficam reservadas a ponteiros precisos, como mouse e trackpad.
+    if (reduce || coarsePointer) return () => document.removeEventListener("click", onClick);
 
     let destroy = () => {};
     void Promise.all([import("lenis"), import("gsap"), import("gsap/ScrollTrigger")]).then(([{ default: Lenis }, { gsap }, { ScrollTrigger }]) => {

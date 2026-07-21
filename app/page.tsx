@@ -8,12 +8,13 @@ import { TrustSections } from "@/components/trust-sections";
 import { RoadmapFaq } from "@/components/roadmap-faq";
 import { Footer } from "@/components/footer";
 import { SiteEffects } from "@/components/site-effects";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 
 export default function Home() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": "https://granjaflow.com.br/#organization", name: "GranjaFlow", url: "https://granjaflow.com.br", founder: { "@type": "Organization", name: "FFR do Brasil Technology" } },
+      { "@type": "Organization", "@id": "https://granjaflow.com.br/#organization", name: "GranjaFlow", url: "https://granjaflow.com.br", telephone: "+55 45 99931-7831", founder: { "@type": "Organization", name: "FFR do Brasil Technology" } },
       { "@type": "SoftwareApplication", name: "GranjaFlow", applicationCategory: "BusinessApplication", operatingSystem: "Web", description: "Plataforma digital para gestão integrada de granjas e produção animal.", audience: { "@type": "Audience", audienceType: "Integradoras, técnicos e produtores rurais" }, offers: { "@type": "Offer", availability: "https://schema.org/OnlineOnly" } },
       { "@type": "FAQPage", mainEntity: [
         ["O GranjaFlow substitui o sistema da integradora?", "Não necessariamente. O GranjaFlow pode complementar os sistemas existentes e organizar a rotina operacional do campo."],
@@ -34,6 +35,7 @@ export default function Home() {
       <TrustSections />
       <RoadmapFaq />
       <Footer />
+      <WhatsAppFloat />
       <SiteEffects />
     </main>
   );
