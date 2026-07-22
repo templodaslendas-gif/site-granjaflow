@@ -1,13 +1,23 @@
 # GranjaFlow
 
-Landing page oficial preparada para GitHub e Vercel.
+Landing page oficial do GranjaFlow, preparada para GitHub e deploy na Vercel.
 
-## Publicação na Vercel
+## Desenvolvimento local
 
-1. Envie o conteúdo desta pasta para a raiz do repositório GitHub.
-2. Importe o repositório na Vercel.
-3. Selecione o framework Next.js.
-4. Deixe Root Directory como `./`.
-5. Não sobrescreva Build Command nem Output Directory.
+Requisitos: Node.js 20 ou superior.
 
-O comando de produção é `npm run build` e a saída do Next.js é detectada automaticamente pela Vercel.
+```bash
+npm install
+npm run dev
+```
+
+Abra `http://localhost:3000`.
+
+## Produção
+
+```bash
+npm run build
+npm start
+```
+
+O projeto não exige variáveis de ambiente. Os CTAs comerciais usam o WhatsApp e o botão de acesso direciona para `https://app.granjaflow.com.br/`.

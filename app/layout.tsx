@@ -1,51 +1,44 @@
 import type { Metadata } from "next";
-import { Manrope, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
+const geistSans = localFont({
+  src: "./fonts/geist-latin.woff2",
+  variable: "--font-geist-sans",
+  display: "swap",
+  weight: "100 900",
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "./fonts/geist-mono-latin.woff2",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://granjaflow.com.br"),
+  metadataBase: new URL("https://www.granjaflow.com.br"),
   title: "GranjaFlow | Gestão Integrada de Granjas",
   description: "Centralize registros, acompanhe lotes, mortalidade, ração e ocorrências. Conecte produtores, técnicos e integradoras em uma única plataforma.",
-  alternates: { canonical: "/" },
-  openGraph: { title: "GranjaFlow | Gestão Integrada de Granjas", description: "A gestão da granja conectada do campo à integradora.", type: "website", locale: "pt_BR" },
-  twitter: { card: "summary_large_image", title: "GranjaFlow", description: "Tecnologia para transformar dados do campo em decisões mais rápidas." },
-  other: {
-    "codex-preview": "development",
+  openGraph: {
+    title: "GranjaFlow | Gestão Integrada de Granjas",
+    description: "A gestão da granja conectada do campo à integradora.",
+    locale: "pt_BR",
+    type: "website",
   },
+  twitter: { card: "summary_large_image", title: "GranjaFlow", description: "Tecnologia para transformar dados do campo em decisões mais rápidas." },
+  manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
-  manifest: "/manifest.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="pt-BR">
-      <body
-        className={`${manrope.variable} ${geistMono.variable} antialiased`}
-      >
-        <a className="skipLink" href="#conteudo">Ir para o conteúdo</a>
-        {children}
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body></html>;
 }
