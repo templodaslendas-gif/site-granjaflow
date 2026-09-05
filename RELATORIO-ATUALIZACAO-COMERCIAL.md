@@ -86,7 +86,9 @@ Todas possuem atuação oficial documentada em cadeias agroindustriais, cooperat
 
 ## 8. Origem e condição de uso dos assets
 
-O carrossel desta revisão usa os arquivos coloridos fornecidos pelo responsável pelo projeto, armazenados localmente e sem hotlink. As marcas permanecem propriedade de seus titulares. Antes de campanhas pagas ou materiais impressos, recomenda-se uma revisão jurídica específica ou autorização dos titulares.
+O carrossel desta revisão usa os arquivos coloridos fornecidos pelo responsável pelo projeto, armazenados localmente e sem hotlink. A marca Frimesa recebeu tratamento de transparência para eliminar o retângulo branco sem redesenhar a identidade. A marca Primato foi ampliada mantendo o arquivo original e sua proporção. As marcas permanecem propriedade de seus titulares. Antes de campanhas pagas ou materiais impressos, recomenda-se uma revisão jurídica específica ou autorização dos titulares.
+
+A bandeira do Brasil usada no crédito da FFR é o arquivo vetorial `brasil.svg`, obtido do pacote público `flag-icons` versão 7.5.0, distribuído sob licença MIT.
 
 ## 9. Texto do carrossel
 
@@ -147,8 +149,7 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - `package.json`
 - `package-lock.json`
 - `tsconfig.json`
-- `README.md`
-- `.gitignore`
+- `worker-configuration.d.ts`
 - `RELATORIO-ATUALIZACAO-COMERCIAL.md`
 
 ## 16. Aprovações necessárias antes de publicar
@@ -159,3 +160,21 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - Aprovar o uso nominativo das marcas do setor. O disclaimer visual foi removido a pedido, mas a proteção permanece nos Termos de Uso.
 - Revisar as políticas com assessoria jurídica antes do uso definitivo, pois os textos são uma base operacional e não substituem aconselhamento jurídico.
 - Autorizar publicação em produção somente depois da homologação.
+
+## 17. Ajustes finais desta revisão
+
+- Hero encurtada para `Mais controle, mais resultado`.
+- Texto de apoio reduzido para explicar produção, custos e financeiro em uma leitura rápida.
+- Imagem da Hero mantida em formato quadrado para eliminar o espaço vazio acima da arte.
+- Logo GranjaFlow centralizada no cabeçalho, com navegação posicionada abaixo no desktop e no celular.
+- Distância entre a Hero e a seção de soluções reduzida.
+- Bloco verde de chamada comercial no final da página removido.
+- Frimesa aplicada sem fundo retangular.
+- Primato ampliada no carrossel sem distorção.
+- Bandeira vetorial do Brasil aplicada ao lado do crédito clicável da FFR.
+
+## 18. Compatibilidade com a Vercel
+
+- Removida a restrição fixa `node 22.x` do pacote de entrega.
+- A versão do Node.js passa a seguir a configuração do projeto existente na Vercel.
+- O ajuste elimina o conflito visual `Node.js Version Override` sem alterar o funcionamento do site.
