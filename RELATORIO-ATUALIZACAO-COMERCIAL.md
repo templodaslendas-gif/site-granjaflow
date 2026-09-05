@@ -178,3 +178,11 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - Removida a restrição fixa `node 22.x` do pacote de entrega.
 - A versão do Node.js passa a seguir a configuração do projeto existente na Vercel.
 - O ajuste elimina o conflito visual `Node.js Version Override` sem alterar o funcionamento do site.
+
+## 19. Cabeçalho e crédito final
+
+- Menu principal centralizado abaixo da marca GranjaFlow.
+- Botão `Conhecer o Integra` destacado em azul.
+- Botão `Acessar o sistema` destacado em verde.
+- Mesma hierarquia aplicada ao menu móvel.
+- Bandeira do Brasil mantida na mesma linha e imediatamente ao lado do crédito da FFR.

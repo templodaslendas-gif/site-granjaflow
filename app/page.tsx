@@ -105,9 +105,8 @@ export default function Home() {
       <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>
       <header className="site-header">
         <a className="header-brand" href="#inicio" aria-label="GranjaFlow, início"><Brand /></a>
-        <nav aria-label="Navegação principal"><a href="#gestao">GranjaFlow Gestão</a><a href="#integra">GranjaFlow Integra</a><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#contato">Contato</a></nav>
-        <div className="header-actions"><a className="access-link" href={APP_URL} target="_blank" rel="noreferrer">Acessar sistema <Arrow /></a><a className="button button-small" href={gestaoWhatsapp} target="_blank" rel="noreferrer">Conhecer o Gestão <Arrow /></a></div>
-        <details className="mobile-menu"><summary aria-label="Abrir menu"><b>Menu</b><i aria-hidden="true"><span /><span /><span /></i></summary><div><a href="#gestao">GranjaFlow Gestão</a><a href="#integra">GranjaFlow Integra</a><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#contato">Contato</a><a className="access-link" href={APP_URL} target="_blank" rel="noreferrer">Acessar sistema <Arrow /></a><a className="button" href={gestaoWhatsapp} target="_blank" rel="noreferrer">Conhecer o Gestão <Arrow /></a></div></details>
+        <nav aria-label="Navegação principal"><a href="#gestao">GranjaFlow Gestão</a><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#contato">Contato</a><a className="button button-small nav-integra" href="#integra">Conhecer o Integra <Arrow /></a><a className="button button-small nav-access" href={APP_URL} target="_blank" rel="noreferrer">Acessar o sistema <Arrow /></a></nav>
+        <details className="mobile-menu"><summary aria-label="Abrir menu"><b>Menu</b><i aria-hidden="true"><span /><span /><span /></i></summary><div><a href="#gestao">GranjaFlow Gestão</a><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#contato">Contato</a><a className="button nav-integra" href="#integra">Conhecer o Integra <Arrow /></a><a className="button nav-access" href={APP_URL} target="_blank" rel="noreferrer">Acessar o sistema <Arrow /></a></div></details>
       </header>
 
       <section className="hero" id="conteudo">
