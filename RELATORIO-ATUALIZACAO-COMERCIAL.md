@@ -20,7 +20,11 @@ Data: 5 de setembro de 2026
 - Nova seção dedicada ao produtor independente e à pergunta sobre custo por suíno.
 - Nova demonstração visual de custos, identificada como ilustrativa.
 - Novo fluxo de funcionamento, seção econômica, uso no campo e mapa operacional do Integra.
-- Carrossel setorial com disclaimer explícito de ausência de parceria.
+- Carrossel setorial reposicionado, com fundo claro e marcas em suas cores originais.
+- Títulos padronizados em uma única cor, sem pontos finais ou travessões.
+- Espaçamento vertical reduzido entre as seções.
+- Ícones decorativos do fluxo de funcionamento removidos.
+- Rodapé ampliado com WhatsApp, crédito clicável da FFR, bandeira do Brasil e direitos reservados.
 - Políticas de Privacidade e LGPD, Cookies e Termos de Uso adicionadas.
 - Aviso de cookies com preferência salva localmente.
 - SEO, sitemap e robots atualizados.
@@ -67,26 +71,30 @@ Todas possuem atuação oficial documentada em cadeias agroindustriais, cooperat
 - Lar, pecuária: https://www.lar.ind.br/lar-agro/pecuaria/
 - Copacol: https://www.copacol.com.br/
 
-## 7. Logos obtidas
+## 7. Logos usadas no carrossel
 
-- `public/brands/mbrf.svg`
-- `public/brands/aurora-coop.svg`
-- `public/brands/frimesa.png`
-- `public/brands/cvale.png`
-- `public/brands/lar.png`
-- `public/brands/copacol.png`
+- Aurora
+- BRF
+- C.Vale
+- Frimesa
+- Lar Cooperativa
+- Copacol
+- Primato
+- Copagril
+- JBS
+- Seara
 
 ## 8. Origem e condição de uso dos assets
 
-Os arquivos foram obtidos diretamente dos sites oficiais das organizações e armazenados localmente para evitar hotlink. Não foi identificado um press kit geral com licença aberta comum a todas as marcas. As marcas permanecem propriedade de seus titulares e são exibidas apenas como referência nominativa do ecossistema. Antes de campanhas pagas ou materiais impressos, recomenda-se uma revisão jurídica específica ou autorização dos titulares.
+O carrossel desta revisão usa os arquivos coloridos fornecidos pelo responsável pelo projeto, armazenados localmente e sem hotlink. As marcas permanecem propriedade de seus titulares. Antes de campanhas pagas ou materiais impressos, recomenda-se uma revisão jurídica específica ou autorização dos titulares.
 
 ## 9. Texto do carrossel
 
-`Preparado para diferentes modelos da suinocultura brasileira.`
+`Referências da suinocultura Brasileira`
 
-## 10. Disclaimer usado
+## 10. Disclaimer
 
-`Marcas exibidas como referência do ecossistema agroindustrial brasileiro. A exibição não implica parceria, homologação, vínculo comercial ou uso do GranjaFlow pelas empresas mencionadas.`
+O disclaimer visual abaixo do carrossel foi removido conforme solicitado. Os Termos de Uso continuam registrando que marcas de terceiros são referências setoriais e não representam parceria, homologação ou vínculo comercial.
 
 ## 11. CTAs
 
@@ -116,10 +124,10 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - TypeScript: aprovado com `npx tsc --noEmit`.
 - Lint: aprovado com `npm run lint`.
 - Teste existente: aprovado com `npm test`.
-- Build nativa do Next.js para Vercel: aprovada, incluindo `/`, `/cookies`, `/privacidade`, `/termos`, `/robots.txt` e `/sitemap.xml`.
+- Build de produção: aprovado, incluindo as rotas `/`, `/cookies`, `/privacidade` e `/termos`.
 - Validação visual em navegador: imagens carregadas, Hero, recursos, processo e CTAs sem falhas aparentes.
 - Largura da página validada sem rolagem horizontal no desktop.
-- Responsividade revisada por breakpoints para 320, 360, 390, 412, 768 e desktop. As grades, CTAs, imagens e navegação reduzem de forma progressiva até uma coluna.
+- Validação responsiva executada em 320, 360, 390, 412 e 768 pixels, sem rolagem horizontal ou imagens obrigatórias quebradas.
 - Preferência por redução de movimento respeitada nas animações e no carrossel.
 
 ## 15. Arquivos alterados ou adicionados
@@ -148,6 +156,6 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - Confirmar visualmente a prioridade comercial do GranjaFlow Gestão.
 - Confirmar que todos os recursos listados nos dois produtos já estão liberados para comunicação pública.
 - Aprovar os valores ilustrativos usados no mockup ou solicitar outros números.
-- Aprovar o uso nominativo das marcas do setor e o disclaimer.
+- Aprovar o uso nominativo das marcas do setor. O disclaimer visual foi removido a pedido, mas a proteção permanece nos Termos de Uso.
 - Revisar as políticas com assessoria jurídica antes do uso definitivo, pois os textos são uma base operacional e não substituem aconselhamento jurídico.
 - Autorizar publicação em produção somente depois da homologação.

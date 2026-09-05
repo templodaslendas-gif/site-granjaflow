@@ -7,7 +7,7 @@ export default function LegalLayout({ title, intro, children }: { title: string;
       <header className="legal-header">
         <Link className="brand-lockup" href="/" aria-label="Voltar para o GranjaFlow">
           <span className="brand-symbol"><img src="/favicon-96x96.png" alt="" width="96" height="96" /></span>
-          <span><strong>GranjaFlow</strong><small>TECNOLOGIA PARA SUINOCULTURA</small></span>
+          <strong>GranjaFlow</strong>
         </Link>
         <Link className="legal-back" href="/">Voltar ao site</Link>
       </header>
