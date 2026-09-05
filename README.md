@@ -1,23 +1,25 @@
-# GranjaFlow
+# GranjaFlow Site Comercial
 
-Landing page oficial do GranjaFlow, preparada para GitHub e deploy na Vercel.
+Site institucional público do GranjaFlow, preparado para Next.js e Vercel.
 
-## Desenvolvimento local
-
-Requisitos: Node.js 20 ou superior.
+## Executar localmente
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Abra `http://localhost:3000`.
-
-## Produção
+## Validar
 
 ```bash
+npm run typecheck
+npm run lint
+npm test
 npm run build
-npm start
 ```
 
-O projeto não exige variáveis de ambiente. Os CTAs comerciais usam o WhatsApp e o botão de acesso direciona para `https://app.granjaflow.com.br/`.
+## Publicação
+
+Substitua o conteúdo do repositório atual por este pacote, preservando apenas a pasta oculta `.git`. Faça commit e push para a branch conectada à Vercel. Nenhuma variável de ambiente é obrigatória para o site público.
+
+O domínio e o projeto existentes na Vercel não precisam ser recriados.

@@ -1,32 +1,28 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CookieConsent from "./cookie-consent";
 
-const geistSans = localFont({
-  src: "./fonts/geist-latin.woff2",
-  variable: "--font-geist-sans",
-  display: "swap",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/geist-mono-latin.woff2",
-  variable: "--font-geist-mono",
-  display: "swap",
-  weight: "100 900",
-});
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.granjaflow.com.br"),
-  title: "GranjaFlow | Gestão Integrada de Granjas",
-  description: "Centralize registros, acompanhe lotes, mortalidade, ração e ocorrências. Conecte produtores, técnicos e integradoras em uma única plataforma.",
+  title: "GranjaFlow | Gestão de granja e suinocultura",
+  description: "Software para gestão de granja de suínos. Controle lotes, mortalidade, ração, estoque, custos, financeiro e resultados, do produtor independente à integradora.",
+  keywords: ["software para suinocultura", "sistema para granja de suínos", "gestão de granja", "gestão de suinocultura", "controle de custos suinocultura", "controle de ração", "produtor independente de suínos", "software para integradora de suínos"],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "GranjaFlow | Gestão Integrada de Granjas",
-    description: "A gestão da granja conectada do campo à integradora.",
+    title: "GranjaFlow | Gestão inteligente da granja",
+    description: "Controle lotes, ração, custos e resultados. GranjaFlow Gestão para o produtor independente e GranjaFlow Integra para operações integradas.",
+    url: "https://www.granjaflow.com.br",
+    siteName: "GranjaFlow",
     locale: "pt_BR",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "GranjaFlow", description: "Tecnologia para transformar dados do campo em decisões mais rápidas." },
+  twitter: { card: "summary", title: "GranjaFlow | Gestão inteligente da granja", description: "Tecnologia, campo e resultado para produtores e operações integradas." },
+  robots: { index: true, follow: true },
+  other: { "codex-preview": "development" },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -40,5 +36,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body></html>;
+  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable}`}>{children}<CookieConsent /></body></html>;
 }

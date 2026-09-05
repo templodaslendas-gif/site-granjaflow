@@ -1,15 +1,17 @@
 {
-  "name": "granjaflow-premium",
-  "version": "0.1.0",
+  "name": "granjaflow-site-comercial",
+  "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=20.9.0"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ignore-pattern .next"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "npm run typecheck && npm run lint"
   },
   "dependencies": {
     "motion": "^12.42.2",
@@ -26,7 +28,5 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
-  },
-  "type": "module",
-  "displayName": "GranjaFlow"
+  }
 }
