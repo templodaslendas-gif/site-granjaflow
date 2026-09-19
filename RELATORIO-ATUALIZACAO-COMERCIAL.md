@@ -186,3 +186,10 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 - Botão `Acessar o sistema` destacado em verde.
 - Mesma hierarquia aplicada ao menu móvel.
 - Bandeira do Brasil mantida na mesma linha e imediatamente ao lado do crédito da FFR.
+
+## 20. Checkout comercial
+
+- Checkout oficial configurado em todos os botões comerciais: `https://lastlink.com/p/C29CE6377/`.
+- O acesso ao sistema continua apontando para `https://app.granjaflow.com.br/`.
+- WhatsApp, telefone, políticas, navegação interna e gerenciamento de cookies preservam suas funções próprias.
+- A área da Hero permanece preparada para receber o vídeo em uma atualização futura.
