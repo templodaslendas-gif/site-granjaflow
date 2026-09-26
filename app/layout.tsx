@@ -1,41 +1,51 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Manrope, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import CookieConsent from "./cookie-consent";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const montserrat = Montserrat({ variable: "--font-heading", subsets: ["latin"], weight: ["700", "800", "900"] });
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.granjaflow.com.br"),
-  title: "GranjaFlow | Gestão de granja e suinocultura",
-  description: "Software para gestão de granja de suínos. Controle lotes, mortalidade, ração, estoque, custos, financeiro e resultados, do produtor independente à integradora.",
-  keywords: ["software para suinocultura", "sistema para granja de suínos", "gestão de granja", "gestão de suinocultura", "controle de custos suinocultura", "controle de ração", "produtor independente de suínos", "software para integradora de suínos"],
+  metadataBase: new URL("https://granjaflow.com.br"),
+  title: "GranjaFlow | Gestão Integrada de Granjas",
+  description: "Centralize registros, acompanhe lotes, mortalidade, ração e ocorrências. Conecte produtores, técnicos e integradoras em uma única plataforma.",
   alternates: { canonical: "/" },
-  openGraph: {
-    title: "GranjaFlow | Gestão inteligente da granja",
-    description: "Controle lotes, ração, custos e resultados. GranjaFlow Gestão para o produtor independente e GranjaFlow Integra para operações integradas.",
-    url: "https://www.granjaflow.com.br",
-    siteName: "GranjaFlow",
-    locale: "pt_BR",
-    type: "website",
+  openGraph: { title: "GranjaFlow | Gestão Integrada de Granjas", description: "A gestão da granja conectada do campo à integradora.", type: "website", locale: "pt_BR" },
+  twitter: { card: "summary_large_image", title: "GranjaFlow", description: "Tecnologia para transformar dados do campo em decisões mais rápidas." },
+  other: {
+    "codex-preview": "development",
   },
-  twitter: { card: "summary", title: "GranjaFlow | Gestão inteligente da granja", description: "Tecnologia, campo e resultado para produtores e operações integradas." },
-  robots: { index: true, follow: true },
-  other: { "codex-preview": "development" },
-  manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
     ],
     shortcut: "/favicon.ico",
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  manifest: "/manifest.webmanifest",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}>{children}<CookieConsent /></body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="pt-BR">
+      <body
+        className={`${manrope.variable} ${geistMono.variable} antialiased`}
+      >
+        <a className="skipLink" href="#conteudo">Ir para o conteúdo</a>
+        {children}
+      </body>
+    </html>
+  );
 }
