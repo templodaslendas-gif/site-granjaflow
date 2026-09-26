@@ -189,7 +189,17 @@ Foram criadas regras específicas para celular, tablet e desktop, incluindo 320,
 
 ## 20. Checkout comercial
 
-- Checkout oficial configurado em todos os botões comerciais: `https://lastlink.com/p/C29CE6377/`.
+- Checkout oficial configurado nos botões de compra do GranjaFlow Gestão: `https://lastlink.com/p/C29CE6377/`.
 - O acesso ao sistema continua apontando para `https://app.granjaflow.com.br/`.
 - WhatsApp, telefone, políticas, navegação interna e gerenciamento de cookies preservam suas funções próprias.
 - A área da Hero permanece preparada para receber o vídeo em uma atualização futura.
+
+## 21. Oferta anual para cliente final
+
+- Preço anterior apresentado: **R$ 439,00**.
+- Preço atual do plano anual: **R$ 197,90 por ano**.
+- Equivalente mensal destacado: **R$ 16,49 por mês**.
+- A Hero passou a ter um único caminho de compra para o GranjaFlow Gestão.
+- Abaixo do botão de compra foi incluído o atendimento pelo WhatsApp com a mensagem: **Olá, vim pelo site do GranjaFlow e preciso tirar algumas dúvidas**.
+- Os botões do GranjaFlow Gestão continuam direcionados ao checkout oficial da Lastlink.
+- Os botões do GranjaFlow Integra foram separados do checkout e agora direcionam para negociação comercial pelo WhatsApp.
