@@ -3,7 +3,7 @@ import { SITE_URL } from "@/lib/site";
 export function GET() {
   const content = `# GranjaFlow
 
-> Software para gestão da suinocultura, com uma solução para produtores independentes e outra para operações integradas.
+> Software para gestão da suinocultura, com controle de lotes, mortalidade, ração, custos, financeiro e resultados da granja.
 
 ## Páginas
 
@@ -12,10 +12,9 @@ export function GET() {
 - Política de Cookies: ${SITE_URL}/cookies
 - Termos de Uso: ${SITE_URL}/termos
 
-## Produtos
+## Produto
 
-- GranjaFlow Gestão: voltado ao produtor independente
-- GranjaFlow Integra: voltado a integradoras, cooperativas e operações integradas
+- GranjaFlow: acesso anual para gestão da granja
 
 ## Contato
 

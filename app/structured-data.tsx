@@ -20,22 +20,12 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "GranjaFlow Gestão",
+    name: "GranjaFlow",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     inLanguage: "pt-BR",
-    url: absoluteUrl("/#gestao"),
-    description: "Plataforma para o produtor independente acompanhar lotes, mortalidade, ração, custos, financeiro e resultados da granja.",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "GranjaFlow Integra",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    inLanguage: "pt-BR",
-    url: absoluteUrl("/#integra"),
-    description: "Plataforma para acompanhar técnicos, produtores, granjas e lotes em operações integradas.",
+    url: absoluteUrl("/#granjaflow"),
+    description: "Plataforma para acompanhar lotes, mortalidade, ração, custos, financeiro e resultados da granja.",
   },
 ];
 
