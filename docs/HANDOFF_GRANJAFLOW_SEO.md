@@ -2,11 +2,25 @@
 
 Atualizado em 24 de outubro de 2026
 
+## Fase 3, oferta única
+
+- Branch: `site/oferta-unica`
+- Decisão comercial: o site público passa a vender um único acesso anual ao GranjaFlow
+- Removidas da comunicação pública as opções Integra, Conectado e Direto
+- O aplicativo, o banco, o Supabase e as regras internas não foram alterados
+- Preço preservado: de R$ 439,00 por R$ 197,90 ao ano, equivalente a R$ 16,49 por mês
+- Checkout preservado: `https://lastlink.com/p/C29CE6377/`
+- WhatsApp comercial preservado para dúvidas e demonstração
+- Navegação, oferta, perguntas frequentes, rodapé, metadados, JSON-LD, `llms.txt`, privacidade e termos foram alinhados à oferta única
+- Nenhuma funcionalidade nova foi anunciada
+- `npm run typecheck`, `npm run lint` e `npm run build` aprovados localmente
+- A produção permanece no merge `e5674a94dd78b994abdad190ca112fa30930b1e2` até uma autorização separada
+
 ## Estado reconciliado
 
 - Repositório oficial: `templodaslendas-gif/site-granjaflow`
 - Branch de produção confirmada: `main`
-- Commit confirmado no GitHub e na produção: `a335defd2a9b3f0d20479b73e08d376d2c52279c`
+- Commit confirmado no GitHub e na produção: `e5674a94dd78b994abdad190ca112fa30930b1e2`
 - Projeto Vercel confirmado: `site-granjaflow-vc7b`
 - Domínios confirmados: `www.granjaflow.com.br` e `granjaflow.com.br`
 - Branch de trabalho: `seo/fase-2`
