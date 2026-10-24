@@ -9,7 +9,10 @@ Atualizado em 24 de outubro de 2026
 - Commit confirmado no GitHub e na produção: `a335defd2a9b3f0d20479b73e08d376d2c52279c`
 - Projeto Vercel confirmado: `site-granjaflow-vc7b`
 - Domínios confirmados: `www.granjaflow.com.br` e `granjaflow.com.br`
-- Esta revisão ainda está apenas na cópia local, sem branch, commit, push ou deploy
+- Branch de trabalho: `seo/fase-2`
+- Commit técnico validado: `d26006584ea7226e79fbd03beb30ff61d65a46db`
+- Prévia Vercel: `https://site-granjaflow-vc7b-bdkc03a0i-templodaslendas-gifs-projects.vercel.app`
+- Status da prévia: `READY`, sem merge em `main` e sem alteração da produção
 
 ## Decisões preservadas
 
@@ -20,7 +23,7 @@ Atualizado em 24 de outubro de 2026
 - Nenhuma funcionalidade nova foi acrescentada à comunicação com base no inventário preliminar do produto
 - Sem `Offer`, CNPJ, endereço, avaliação ou quantidade de clientes no JSON-LD
 
-## Alterações locais preparadas
+## Alterações implementadas na branch
 
 - URL canônica centralizada em `NEXT_PUBLIC_SITE_URL`
 - Prévias e ambiente local configurados como `noindex, nofollow`
@@ -39,7 +42,7 @@ Atualizado em 24 de outubro de 2026
 
 O arquivo `RELATORIO_SITE_PUBLICO_GRANJAFLOW_2026-10.md` foi classificado como preliminar e não aprovado para copy pública. Ele não comprova, por si só, disponibilidade em produção. Por esse motivo, esta fase não anuncia Armadilhas, offline, score, semáforo, estoque regulador, leitura automática de croqui ou outras funções ainda não verificadas diretamente no aplicativo publicado.
 
-## Validações concluídas na cópia local
+## Validações concluídas
 
 - `npm ci`: concluído
 - `npm run typecheck`: aprovado sem erro
@@ -53,6 +56,13 @@ O arquivo `RELATORIO_SITE_PUBLICO_GRANJAFLOW_2026-10.md` foi classificado como p
 - `llms.txt`, 404 em português, imagem Open Graph e cabeçalhos de segurança confirmados por requisições locais
 - Busca por padrões comuns de segredo concluída na cópia local e na branch padrão do GitHub, sem ocorrência encontrada
 - Comparação final concluída contra os arquivos do commit publicado usados como base
+- Deploy automático da branch identificado na Vercel com status `READY`
+- Prévia remota confirmada com `noindex, nofollow` e `Disallow: /`
+- Canonical remoto confirmado para home, `/privacidade`, `/cookies` e `/termos`
+- JSON-LD remoto parseado com quatro entidades factuais
+- Conteúdo, preço, checkout do Gestão e CTA comercial do Integra preservados na prévia
+- Responsividade verificada em 320, 360, 375, 390, 412, 768 e 1366 pixels, sem rolagem horizontal
+- Página 404 remota confirmada em português e com `noindex`
 
 Não foi possível executar uma varredura criptográfica completa de todos os blobs históricos porque a cópia de trabalho não contém o diretório Git. Essa limitação não afeta os testes do código atual e permanece registrada para uma etapa posterior.
 
@@ -68,4 +78,4 @@ Não foi possível executar uma varredura criptográfica completa de todos os bl
 
 ## Próxima ação
 
-Após os testes locais, solicitar autorização para criar a branch `seo/fase-2`, registrar os commits e enviar a branch ao GitHub. A prévia da Vercel deve permanecer sem indexação. Merge em `main` e produção exigem uma autorização posterior e separada.
+O responsável deve revisar a prévia da branch. Depois dessa homologação, solicitar autorização explícita e separada para merge em `main` e publicação no domínio oficial. A remanufatura comercial, a atualização de funções e a criação das novas imagens começam somente após o encerramento desta fase técnica.
