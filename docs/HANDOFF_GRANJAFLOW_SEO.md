@@ -2,6 +2,20 @@
 
 Atualizado em 24 de outubro de 2026
 
+## Fase 4, políticas brasileiras e Search Console
+
+- Base local preparada a partir da versão da oferta única publicada
+- Política de Privacidade refinada para o contexto comercial e agro, sem abranger indevidamente os dados operacionais do aplicativo
+- Política de Cookies alinhada ao uso atual de armazenamento local estritamente necessário, sem cookies de análise, publicidade ou perfilamento
+- Termos de Uso atualizados com contratação anual pela Lastlink, direito de arrependimento quando aplicável, responsabilidade sobre dados registrados e ausência de promessa de lucro ou resultado produtivo e sanitário
+- Referências jurídicas mantidas em linguagem clara, com LGPD, Marco Civil da Internet, Código de Defesa do Consumidor e regras do comércio eletrônico
+- Nenhum CNPJ, endereço, prazo promocional, renovação automática ou condição comercial não confirmada foi inventado
+- Propriedade de domínio `granjaflow.com.br` verificada no Google Search Console por registro TXT autorizado
+- Sitemap `https://www.granjaflow.com.br/sitemap.xml` enviado e processado com 4 páginas encontradas
+- Página inicial confirmada pelo Search Console como indexada no Google
+- O registro TXT deve permanecer no DNS para conservar a verificação da propriedade
+- Esta fase permanece somente na cópia local até autorização separada para commit, push, merge e produção
+
 ## Fase 3, oferta única
 
 - Branch: `site/oferta-unica`
@@ -14,13 +28,13 @@ Atualizado em 24 de outubro de 2026
 - Navegação, oferta, perguntas frequentes, rodapé, metadados, JSON-LD, `llms.txt`, privacidade e termos foram alinhados à oferta única
 - Nenhuma funcionalidade nova foi anunciada
 - `npm run typecheck`, `npm run lint` e `npm run build` aprovados localmente
-- A produção permanece no merge `e5674a94dd78b994abdad190ca112fa30930b1e2` até uma autorização separada
+- Oferta única publicada em produção no commit `6deaa147b856ceed7ea9aac7e24ce892c498aa16`
 
 ## Estado reconciliado
 
 - Repositório oficial: `templodaslendas-gif/site-granjaflow`
 - Branch de produção confirmada: `main`
-- Commit confirmado no GitHub e na produção: `e5674a94dd78b994abdad190ca112fa30930b1e2`
+- Commit confirmado no GitHub e na produção antes da Fase 4: `6deaa147b856ceed7ea9aac7e24ce892c498aa16`
 - Projeto Vercel confirmado: `site-granjaflow-vc7b`
 - Domínios confirmados: `www.granjaflow.com.br` e `granjaflow.com.br`
 - Branch de trabalho: `seo/fase-2`
@@ -32,7 +46,7 @@ Atualizado em 24 de outubro de 2026
 
 - Preço publicado do GranjaFlow Gestão: de R$ 439,00 por R$ 197,90 por ano, equivalente a R$ 16,49 por mês
 - Checkout do Gestão: Lastlink
-- GranjaFlow Integra: negociação comercial por WhatsApp, sem checkout do Gestão
+- A comunicação pública atual oferece um único acesso anual; não há opções Integra, Conectado ou Direto no site
 - Manifesto mantido em `/site.webmanifest`, pois é o arquivo existente no commit efetivamente publicado
 - Nenhuma funcionalidade nova foi acrescentada à comunicação com base no inventário preliminar do produto
 - Sem `Offer`, CNPJ, endereço, avaliação ou quantidade de clientes no JSON-LD
@@ -44,7 +58,7 @@ Atualizado em 24 de outubro de 2026
 - Canonical próprio para as três páginas legais
 - Remoção de `codex-preview` e da lista de palavras-chave de metadados
 - Open Graph 1200 por 630 e cartão grande do Twitter
-- JSON-LD factual para Organization, WebSite, GranjaFlow Gestão e GranjaFlow Integra
+- JSON-LD factual para a organização, o site e o software apresentado publicamente
 - Cabeçalhos de segurança, com CSP inicialmente em modo Report-Only
 - Otimização de imagens pelo Next e dimensões explícitas nos elementos visuais
 - Página 404 em português
@@ -74,7 +88,7 @@ O arquivo `RELATORIO_SITE_PUBLICO_GRANJAFLOW_2026-10.md` foi classificado como p
 - Prévia remota confirmada com `noindex, nofollow` e `Disallow: /`
 - Canonical remoto confirmado para home, `/privacidade`, `/cookies` e `/termos`
 - JSON-LD remoto parseado com quatro entidades factuais
-- Conteúdo, preço, checkout do Gestão e CTA comercial do Integra preservados na prévia
+- Conteúdo, preço, checkout e WhatsApp comercial preservados na prévia
 - Responsividade verificada em 320, 360, 375, 390, 412, 768 e 1366 pixels, sem rolagem horizontal
 - Página 404 remota confirmada em português e com `noindex`
 
@@ -84,7 +98,7 @@ Não foi possível executar uma varredura criptográfica completa de todos os bl
 
 - Confirmar razão social, CNPJ, endereço e canal responsável por privacidade antes de torná-los dados públicos
 - Confirmar se o preço de R$ 197,90 é permanente ou promoção com prazo
-- Realizar revisão jurídica das políticas
+- Realizar revisão jurídica profissional das políticas antes de tratá-las como parecer jurídico definitivo
 - Revisar juridicamente o uso das marcas de terceiros no carrossel
 - Auditar o aplicativo publicado, função por função, antes da remanufatura comercial baseada em recursos novos
 - Produzir screenshots com base demo e dados sintéticos autorizados
@@ -92,4 +106,4 @@ Não foi possível executar uma varredura criptográfica completa de todos os bl
 
 ## Próxima ação
 
-O responsável deve revisar a prévia da branch. Depois dessa homologação, solicitar autorização explícita e separada para merge em `main` e publicação no domínio oficial. A remanufatura comercial, a atualização de funções e a criação das novas imagens começam somente após o encerramento desta fase técnica.
+Revisar o pacote de homologação da Fase 4. Commit, push, merge e publicação das políticas permanecem sujeitos a autorização separada. Depois da publicação, conferir novamente as páginas legais no Search Console sem remover o TXT de verificação do DNS.
