@@ -2,28 +2,28 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "./cookie-consent";
+import StructuredData from "./structured-data";
+import { SHOULD_INDEX, SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const montserrat = Montserrat({ variable: "--font-heading", subsets: ["latin"], weight: ["700", "800", "900"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.granjaflow.com.br"),
+  metadataBase: new URL(SITE_URL),
   title: "GranjaFlow | Gestão de granja e suinocultura",
   description: "Software para gestão de granja de suínos. Controle lotes, mortalidade, ração, estoque, custos, financeiro e resultados, do produtor independente à integradora.",
-  keywords: ["software para suinocultura", "sistema para granja de suínos", "gestão de granja", "gestão de suinocultura", "controle de custos suinocultura", "controle de ração", "produtor independente de suínos", "software para integradora de suínos"],
   alternates: { canonical: "/" },
   openGraph: {
     title: "GranjaFlow | Gestão inteligente da granja",
     description: "Controle lotes, ração, custos e resultados. GranjaFlow Gestão para o produtor independente e GranjaFlow Integra para operações integradas.",
-    url: "https://www.granjaflow.com.br",
+    url: SITE_URL,
     siteName: "GranjaFlow",
     locale: "pt_BR",
     type: "website",
   },
-  twitter: { card: "summary", title: "GranjaFlow | Gestão inteligente da granja", description: "Tecnologia, campo e resultado para produtores e operações integradas." },
-  robots: { index: true, follow: true },
-  other: { "codex-preview": "development" },
+  twitter: { card: "summary_large_image", title: "GranjaFlow | Gestão inteligente da granja", description: "Tecnologia, campo e resultado para produtores e operações integradas." },
+  robots: { index: SHOULD_INDEX, follow: SHOULD_INDEX },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -37,5 +37,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}>{children}<CookieConsent /></body></html>;
+  return <html lang="pt-BR"><body className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}><StructuredData />{children}<CookieConsent /></body></html>;
 }

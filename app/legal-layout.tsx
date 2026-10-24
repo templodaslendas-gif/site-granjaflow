@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 
 export default function LegalLayout({ title, intro, children }: { title: string; intro: string; children: React.ReactNode }) {
@@ -6,7 +6,7 @@ export default function LegalLayout({ title, intro, children }: { title: string;
     <main className="legal-page">
       <header className="legal-header">
         <Link className="brand-lockup" href="/" aria-label="Voltar para o GranjaFlow">
-          <span className="brand-symbol"><img src="/favicon-96x96.png" alt="" width="96" height="96" /></span>
+          <span className="brand-symbol"><Image src="/favicon-96x96.png" alt="" width={96} height={96} sizes="48px" /></span>
           <strong>GranjaFlow</strong>
         </Link>
         <Link className="legal-back" href="/">Voltar ao site</Link>
@@ -14,7 +14,7 @@ export default function LegalLayout({ title, intro, children }: { title: string;
       <article className="legal-content">
         <h1>{title}</h1>
         <p className="legal-intro">{intro}</p>
-        <p className="legal-update">Última atualização: 5 de setembro de 2026</p>
+        <p className="legal-update">Última atualização: 24 de outubro de 2026</p>
         {children}
       </article>
     </main>
