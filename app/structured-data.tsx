@@ -1,0 +1,49 @@
+import { absoluteUrl, SITE_URL } from "@/lib/site";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "GranjaFlow",
+    url: SITE_URL,
+    logo: absoluteUrl("/favicon-96x96.png"),
+    email: "contato@granjaflow.com.br",
+    telephone: "+55 45 99931-7831",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GranjaFlow",
+    url: SITE_URL,
+    inLanguage: "pt-BR",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "GranjaFlow Gestão",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: "pt-BR",
+    url: absoluteUrl("/#gestao"),
+    description: "Plataforma para o produtor independente acompanhar lotes, mortalidade, ração, custos, financeiro e resultados da granja.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "GranjaFlow Integra",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: "pt-BR",
+    url: absoluteUrl("/#integra"),
+    description: "Plataforma para acompanhar técnicos, produtores, granjas e lotes em operações integradas.",
+  },
+];
+
+export default function StructuredData() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+    />
+  );
+}

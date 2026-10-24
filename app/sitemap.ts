@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.granjaflow.com.br";
   return [
-    { url: base, lastModified: new Date("2026-09-05"), changeFrequency: "monthly", priority: 1 },
-    { url: `${base}/privacidade`, lastModified: new Date("2026-09-05"), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${base}/cookies`, lastModified: new Date("2026-09-05"), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${base}/termos`, lastModified: new Date("2026-09-05"), changeFrequency: "yearly", priority: 0.3 },
+    { url: SITE_URL, changeFrequency: "monthly", priority: 1 },
+    { url: `${SITE_URL}/privacidade`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/cookies`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${SITE_URL}/termos`, changeFrequency: "yearly", priority: 0.3 },
   ];
 }

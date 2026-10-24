@@ -1,5 +1,11 @@
 import type { MetadataRoute } from "next";
+import { absoluteUrl, SHOULD_INDEX } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
-  return { rules: { userAgent: "*", allow: "/" }, sitemap: "https://www.granjaflow.com.br/sitemap.xml" };
+  return {
+    rules: SHOULD_INDEX
+      ? { userAgent: "*", allow: "/" }
+      : { userAgent: "*", disallow: "/" },
+    sitemap: absoluteUrl("/sitemap.xml"),
+  };
 }
