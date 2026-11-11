@@ -373,10 +373,14 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
 }
 
 @media (max-width: 350px) {
-  .hero { padding-block: 34px 56px; align-items: flex-start; }
-  .hero h1 { font-size: 2.2rem; }
+  .hero { padding-block: 30px 56px; align-items: flex-start; }
+  .hero h1 { font-size: 2rem; }
   .metrics-grid { grid-template-columns: 1fr; }
   .button, .button-secondary, .ghost-link { padding-left: 16px; padding-right: 16px; font-size: .8rem; }
+  main:has(> .hero) ~ .cookie-banner { padding: 12px; gap: 10px; }
+  main:has(> .hero) ~ .cookie-banner p { line-height: 1.4; }
+  main:has(> .hero) ~ .cookie-banner .cookie-actions { grid-template-columns: auto 1fr; }
+  main:has(> .hero) ~ .cookie-banner .cookie-actions button { font-size: .84rem; }
 }
 
 @media (min-width: 621px) and (max-height: 740px) {
@@ -386,6 +390,10 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
   .hero-lead { font-size: 1.05rem; line-height: 1.55; }
   .hero-actions { margin-top: 20px; }
   .hero-primary-action, .hero-secondary-action { min-height: 52px; }
+}
+
+@media (min-width: 1000px) and (max-height: 620px) {
+  main:has(> .hero) ~ .cookie-banner { left: auto; width: 390px; grid-template-columns: 1fr; gap: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
