@@ -8,7 +8,8 @@ Data: 11 de novembro de 2026
 - Branch: `site/arquitetura-conteudo-seo-fase-5`
 - Base: `origin/main` no commit `b11024afb8056d4b4544e12acbe47afb24783a37`
 - Commit remoto da reconstrução: `17bc484f795b6d50843fd851d4d5863812b56f89`
-- Prévia Vercel: `https://site-granjaflow-vc7b-nvlw15y8d-templodaslendas-gifs-projects.vercel.app/`
+- Commit remoto da estabilização das fontes: `8b9922a6331d90faaeaa7702004e2129dc6c7abf`
+- Prévia Vercel da branch: `https://site-granjaflow-vc7b-git-s-41454c-templodaslendas-gifs-projects.vercel.app/`
 - Estado da prévia: `Ready`
 - Produção não alterada nesta fase
 - Branch enviada ao GitHub e prévia automática gerada
