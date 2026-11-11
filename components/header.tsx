@@ -32,7 +32,6 @@ export function Header() {
         </nav>
         <div className="navActions">
           <label className="language"><span className="srOnly">Selecionar idioma</span><select defaultValue="pt" aria-label="Selecionar idioma"><option value="pt">PT</option><option value="en">EN</option><option value="es">ES</option><option value="it">IT</option></select></label>
-          <a className="login" href="#acessar">Acessar</a>
           <a className="button buttonSmall" href={SALES_URL} target="_blank" rel="noopener noreferrer" data-track="header-sales">Quero contratar</a>
           <button className="menuButton" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">
             {open ? <X /> : <Menu />}

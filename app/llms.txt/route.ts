@@ -14,7 +14,10 @@ export function GET() {
 
 ## Produto
 
-- GranjaFlow: acesso anual para gestão da granja
+- GranjaFlow: plataforma de gestão para granjas de suínos
+- Recursos apresentados: lotes, plantel, mortalidade, ração, estoque, compras, consumo, financeiro, custos, indicadores e histórico
+- Público principal: produtores que administram a própria produção de suínos
+- Demonstrações e condições comerciais: atendimento pelo WhatsApp informado no site
 
 ## Contato
 
