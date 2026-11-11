@@ -70,6 +70,9 @@ Data: 11 de novembro de 2026
 - Sitemap publicado na prévia com 16 URLs canônicas de produção
 - `llms.txt` conferido com recursos, conteúdos e contatos factuais
 - Página 404 em português conferida
+- Geist e Montserrat passaram a ser hospedadas localmente no projeto
+- Dependência de rede do `next/font/google` removida após uma falha transitória da Vercel ao resolver a fonte Montserrat
+- Build limpo, sem cache anterior e sem referências a Google Fonts: aprovado
 
 ## Observação sobre a validação responsiva
 
