@@ -100,13 +100,15 @@ h1 em, h2 em, h3 em { color: inherit; font-style: normal; }
 .hero-video-poster, .hero-video, .hero-video-overlay { width: 100%; height: 100%; position: absolute; inset: 0; }
 .hero-video-poster { z-index: -3; background: url("/images/hero/granjaflow-campo-desktop.webp") center center / cover no-repeat; }
 .hero-video { z-index: -2; display: block; object-fit: cover; object-position: center center; }
-.hero-video-overlay { z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(3,27,56,.96) 0%, rgba(3,27,56,.88) 35%, rgba(3,27,56,.55) 58%, rgba(3,27,56,.2) 100%), linear-gradient(0deg, rgba(3,27,56,.5), transparent 45%); }
+.hero-video-overlay { z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(3,27,56,.96) 0%, rgba(3,27,56,.9) 35%, rgba(3,27,56,.69) 61%, rgba(3,27,56,.2) 100%), linear-gradient(0deg, rgba(3,27,56,.5), transparent 45%); }
 .hero-content { width: min(100%, 1240px); margin: 0 auto; position: relative; }
 .hero-eyebrow { display: inline-block; margin-bottom: 24px; color: #78e1ac; font-size: .79rem; font-weight: 900; letter-spacing: .12em; line-height: 1.4; }
-.hero h1 { max-width: 700px; margin-bottom: 24px; color: white; font-size: clamp(4rem, 6.5vw, 6.5rem); line-height: .91; letter-spacing: -.06em; text-wrap: balance; }
-.hero-lead { max-width: 630px; color: rgba(255,255,255,.88); font-size: clamp(1.05rem, 1.45vw, 1.25rem); line-height: 1.7; }
+.hero h1 { max-width: 860px; margin-bottom: 24px; color: white; font-size: clamp(3.35rem, 5.65vw, 5.55rem); line-height: .98; letter-spacing: -.055em; text-wrap: balance; }
+.hero-lead { max-width: 660px; color: rgba(255,255,255,.92); font-size: clamp(1.05rem, 1.45vw, 1.25rem); line-height: 1.6; }
+.hero-lead strong { color: white; font-weight: 750; }
 .hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.hero-primary-action { min-height: 58px; padding-inline: 27px; box-shadow: 0 16px 38px rgba(0,0,0,.25); }
+.hero-primary-action { min-height: 58px; padding-inline: 27px; background: var(--green-dark); box-shadow: 0 16px 38px rgba(0,0,0,.25); }
+.hero-primary-action:hover { background: #09683c; }
 .hero-primary-action svg { width: 22px; height: 22px; }
 .hero-secondary-action { min-height: 58px; padding: 0 25px; border: 1px solid rgba(255,255,255,.58); border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: white; font-size: .86rem; font-weight: 850; transition: transform .2s, border-color .2s, background .2s; }
 .hero-secondary-action:hover { transform: translateY(-2px); border-color: white; background: rgba(255,255,255,.1); }
@@ -321,15 +323,15 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
   .brand-lockup strong { font-size: 1.04rem; }
   .site-header .mobile-nav { width: calc(100vw - 8px); padding-inline: 16px; justify-content: flex-start; gap: 20px; scroll-snap-type: x proximity; }
   .mobile-nav a { scroll-snap-align: start; font-size: .78rem !important; }
-  .hero { min-height: max(640px, calc(100svh - 116px)); padding: 68px 18px 54px; align-items: flex-end; }
+  .hero { min-height: max(560px, calc(100svh - 116px)); padding: 42px 18px 68px; }
   .hero-video-poster { background-image: url("/images/hero/granjaflow-campo-mobile.webp"); }
   .hero-video { object-position: center center; }
-  .hero-video-overlay { background: linear-gradient(180deg, rgba(3,27,56,.18) 0%, rgba(3,27,56,.4) 36%, rgba(3,27,56,.96) 82%, rgba(3,27,56,.99) 100%); }
-  .hero-eyebrow { margin-bottom: 17px; font-size: .69rem; letter-spacing: .09em; }
-  .hero h1 { max-width: 520px; margin-bottom: 17px; font-size: clamp(3rem, 14vw, 4.2rem); letter-spacing: -.06em; }
-  .hero-lead { max-width: 520px; font-size: 1rem; line-height: 1.62; }
-  .hero-actions { margin-top: 25px; display: grid; grid-template-columns: 1fr; }
-  .hero-primary-action, .hero-secondary-action { width: 100%; }
+  .hero-video-overlay { background: linear-gradient(180deg, rgba(3,27,56,.24) 0%, rgba(3,27,56,.67) 34%, rgba(3,27,56,.96) 82%, rgba(3,27,56,.99) 100%); }
+  .hero-eyebrow { margin-bottom: 14px; font-size: .69rem; letter-spacing: .09em; }
+  .hero h1 { max-width: 520px; margin-bottom: 16px; font-size: clamp(2.45rem, 10.2vw, 3.9rem); }
+  .hero-lead { max-width: 520px; font-size: 1rem; line-height: 1.55; }
+  .hero-actions { margin-top: 22px; display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .hero-primary-action, .hero-secondary-action { width: 100%; min-height: 50px; }
   .contact-panel { padding: 19px 16px; }
   .contact-actions { grid-template-columns: 1fr; }
   .solution-choice { padding: 38px 18px 50px; }
@@ -371,8 +373,7 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
 }
 
 @media (max-width: 350px) {
-  .hero { min-height: 610px; }
-  .hero h1 { font-size: 2.75rem; }
+  .hero { align-items: flex-start; }
   .metrics-grid { grid-template-columns: 1fr; }
   .button, .button-secondary, .ghost-link { padding-left: 16px; padding-right: 16px; font-size: .8rem; }
 }

@@ -9,14 +9,14 @@ import { WHATSAPP_LINKS } from "@/lib/links";
 import { absoluteUrl } from "@/lib/site";
 
 const managementBenefits = [
-  "Controle de lotes e plantel",
-  "Animais alojados e vivos",
-  "Mortalidade e evidências",
-  "Ração, estoque, compras e consumo",
-  "Contas a pagar e receber",
-  "Custos por lote e por animal",
-  "Resultado econômico e fluxo de caixa",
-  "Indicadores e histórico",
+  "Controle de lotes, plantel e mortalidade",
+  "Programa de ração, estoque e linha de consumo",
+  "Sanidade e monitoramento de roedores",
+  "Temperatura, pH, cloro e consumo de água",
+  "Financeiro completo com contas a pagar e a receber",
+  "Custos por lote e por animal, fluxo de caixa e resultado",
+  "Relatórios em PDF para compartilhar com técnicos e integradoras",
+  "Histórico climático da região com até 40 anos de dados",
 ];
 
 const process = [
@@ -116,12 +116,12 @@ export default function Home() {
         <div className="hero-video-overlay" aria-hidden="true" />
 
         <div className="hero-content">
-          <span className="hero-eyebrow">GESTÃO INTELIGENTE PARA SUINOCULTURA</span>
-          <h1>Sua granja sob controle</h1>
-          <p className="hero-lead">Lotes, mortalidade, ração, custos e financeiro em uma única visão para decidir com mais clareza</p>
+          <span className="hero-eyebrow">GESTÃO PARA SUINOCULTURA</span>
+          <h1>Controle sua granja na palma da mão</h1>
+          <p className="hero-lead">Registre a rotina do lote, acompanhe o financeiro e envie relatórios em PDF ao técnico ou à integradora. <strong>Decida mais rápido para reduzir perdas e melhorar a margem de cada lote.</strong></p>
           <div className="hero-actions">
-            <a className="button hero-primary-action" href={WHATSAPP_LINKS.product} target="_blank" rel="noreferrer"><WhatsAppIcon /> Conhecer o GranjaFlow</a>
-            <a className="hero-secondary-action" href={WHATSAPP_LINKS.questions} target="_blank" rel="noreferrer">Tirar dúvidas <ArrowIcon /></a>
+            <a className="button hero-primary-action" href={WHATSAPP_LINKS.demo} target="_blank" rel="noreferrer"><WhatsAppIcon /> Agendar uma demonstração</a>
+            <a className="hero-secondary-action" href="#granjaflow">Ver os recursos <ArrowIcon /></a>
           </div>
         </div>
       </section>
