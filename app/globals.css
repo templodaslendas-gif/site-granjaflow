@@ -323,7 +323,7 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
   .brand-lockup strong { font-size: 1.04rem; }
   .site-header .mobile-nav { width: calc(100vw - 8px); padding-inline: 16px; justify-content: flex-start; gap: 20px; scroll-snap-type: x proximity; }
   .mobile-nav a { scroll-snap-align: start; font-size: .78rem !important; }
-  .hero { min-height: max(560px, calc(100svh - 116px)); padding: 42px 18px 68px; }
+  .hero { min-height: max(560px, calc(100svh - 116px)); padding: 42px 18px 112px; }
   .hero-video-poster { background-image: url("/images/hero/granjaflow-campo-mobile.webp"); }
   .hero-video { object-position: center center; }
   .hero-video-overlay { background: linear-gradient(180deg, rgba(3,27,56,.24) 0%, rgba(3,27,56,.67) 34%, rgba(3,27,56,.96) 82%, rgba(3,27,56,.99) 100%); }
@@ -373,9 +373,19 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
 }
 
 @media (max-width: 350px) {
-  .hero { align-items: flex-start; }
+  .hero { padding-block: 34px 56px; align-items: flex-start; }
+  .hero h1 { font-size: 2.2rem; }
   .metrics-grid { grid-template-columns: 1fr; }
   .button, .button-secondary, .ghost-link { padding-left: 16px; padding-right: 16px; font-size: .8rem; }
+}
+
+@media (min-width: 621px) and (max-height: 740px) {
+  .hero { min-height: max(470px, calc(100svh - 126px)); padding-block: 26px 42px; align-items: flex-start; }
+  .hero-eyebrow { margin-bottom: 14px; }
+  .hero h1 { margin-bottom: 16px; font-size: clamp(3rem, 4.5vw, 4.25rem); }
+  .hero-lead { font-size: 1.05rem; line-height: 1.55; }
+  .hero-actions { margin-top: 20px; }
+  .hero-primary-action, .hero-secondary-action { min-height: 52px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
