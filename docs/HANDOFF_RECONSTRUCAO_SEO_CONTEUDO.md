@@ -5,10 +5,14 @@ Data: 11 de novembro de 2026
 ## Estado
 
 - Repositório: `templodaslendas-gif/site-granjaflow`
-- Branch local: `site/arquitetura-conteudo-seo-fase-5`
+- Branch: `site/arquitetura-conteudo-seo-fase-5`
 - Base: `origin/main` no commit `b11024afb8056d4b4544e12acbe47afb24783a37`
+- Commit remoto da reconstrução: `17bc484f795b6d50843fd851d4d5863812b56f89`
+- Prévia Vercel: `https://site-granjaflow-vc7b-nvlw15y8d-templodaslendas-gifs-projects.vercel.app/`
+- Estado da prévia: `Ready`
 - Produção não alterada nesta fase
-- Commit, push, prévia e merge ainda não realizados
+- Branch enviada ao GitHub e prévia automática gerada
+- Merge e publicação em produção ainda não realizados
 
 ## Restrições preservadas
 
@@ -58,10 +62,18 @@ Data: 11 de novembro de 2026
 - Busca por preço anterior, checkout e botão de acesso: sem ocorrência na interface comercial
 - `git diff --check`: aprovado
 - Assets da seção de referências: sem alteração
+- Prévia Vercel autenticada e conferida no navegador
+- Hero, navegação, seção de referências, recursos, conteúdos, página institucional e páginas legais conferidos na prévia
+- Ausência de preço comercial, checkout e botão “Acessar o sistema” confirmada na prévia
+- Nenhum `overflow` horizontal detectado nas páginas verificadas no viewport de homologação
+- Prévia com `noindex, nofollow` e `robots.txt` com `Disallow: /`
+- Sitemap publicado na prévia com 16 URLs canônicas de produção
+- `llms.txt` conferido com recursos, conteúdos e contatos factuais
+- Página 404 em português conferida
 
-## Limitação de prévia local
+## Observação sobre a validação responsiva
 
-O executor de prévia gerenciada chamou `next dev --host`, enquanto o Next.js aceita `--hostname`. O procedimento oficial proíbe alterar o código para compensar uma falha da infraestrutura. Por isso, a validação visual em navegador deve ser feita na prévia automática da Vercel após push da branch.
+A prévia da Vercel foi validada no navegador em desktop. A estrutura não apresentou rolagem horizontal nas páginas verificadas. O executor gerenciado e o Chromium do ambiente não permitiram emular visualmente todos os viewports móveis nesta rodada; por isso, a conferência final em 320, 360, 390, 412 e 768 px permanece como item de homologação antes do merge. O código contém os breakpoints e regras responsivas previstos, mas isso não substitui a inspeção visual final em dispositivo.
 
 ## Hero em vídeo
 
@@ -77,11 +89,9 @@ Pendente de arquivo do usuário.
 
 ## Próximos passos
 
-1. Autorizar commit e push da branch
-2. Aguardar prévia automática da Vercel
-3. Validar home e novas páginas em 320, 360, 390, 412, 768 e desktop
-4. Corrigir eventuais problemas visuais
-5. Entregar ZIP e relatório de homologação
-6. Solicitar autorização separada para merge e produção
-7. Após produção, acessar Search Console, enviar sitemap e solicitar indexação das URLs principais
-8. Importar a propriedade no Bing Webmaster Tools e avaliar IndexNow quando houver frequência de atualização
+1. Abrir a prévia e homologar visualmente em 320, 360, 390, 412 e 768 px
+2. Corrigir eventuais problemas visuais encontrados na homologação móvel
+3. Aprovar ou rejeitar a prévia
+4. Solicitar autorização separada para merge e produção
+5. Após produção, acessar Search Console, enviar sitemap e solicitar indexação das URLs principais
+6. Importar a propriedade no Bing Webmaster Tools e avaliar IndexNow quando houver frequência de atualização
