@@ -12,7 +12,7 @@ const montserrat = Montserrat({ variable: "--font-heading", subsets: ["latin"], 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "GranjaFlow | Gestão de granja e suinocultura",
-  description: "Software para gestão de granja de suínos. Controle lotes, mortalidade, ração, estoque, custos, financeiro e resultados em um único acesso anual.",
+  description: "Software para gestão de granja de suínos. Controle lotes, mortalidade, ração, estoque, custos, financeiro e resultados em uma plataforma para a suinocultura.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "GranjaFlow | Gestão inteligente da granja",
