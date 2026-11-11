@@ -102,8 +102,7 @@ h1 em, h2 em, h3 em { color: inherit; font-style: normal; }
 .hero-video { z-index: -2; display: block; object-fit: cover; object-position: center center; }
 .hero-video-overlay { z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(3,27,56,.96) 0%, rgba(3,27,56,.88) 35%, rgba(3,27,56,.55) 58%, rgba(3,27,56,.2) 100%), linear-gradient(0deg, rgba(3,27,56,.5), transparent 45%); }
 .hero-content { width: min(100%, 1240px); margin: 0 auto; position: relative; }
-.hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 24px; color: #78e1ac; font-size: .79rem; font-weight: 900; letter-spacing: .12em; line-height: 1.4; }
-.hero-eyebrow:before { content: ""; width: 36px; height: 2px; background: var(--yellow); }
+.hero-eyebrow { display: inline-block; margin-bottom: 24px; color: #78e1ac; font-size: .79rem; font-weight: 900; letter-spacing: .12em; line-height: 1.4; }
 .hero h1 { max-width: 700px; margin-bottom: 24px; color: white; font-size: clamp(4rem, 6.5vw, 6.5rem); line-height: .91; letter-spacing: -.06em; text-wrap: balance; }
 .hero-lead { max-width: 630px; color: rgba(255,255,255,.88); font-size: clamp(1.05rem, 1.45vw, 1.25rem); line-height: 1.7; }
 .hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -327,7 +326,6 @@ footer { padding: 48px 6.8vw 28px; display: grid; grid-template-columns: 1.35fr 
   .hero-video { object-position: center center; }
   .hero-video-overlay { background: linear-gradient(180deg, rgba(3,27,56,.18) 0%, rgba(3,27,56,.4) 36%, rgba(3,27,56,.96) 82%, rgba(3,27,56,.99) 100%); }
   .hero-eyebrow { margin-bottom: 17px; font-size: .69rem; letter-spacing: .09em; }
-  .hero-eyebrow:before { width: 25px; }
   .hero h1 { max-width: 520px; margin-bottom: 17px; font-size: clamp(3rem, 14vw, 4.2rem); letter-spacing: -.06em; }
   .hero-lead { max-width: 520px; font-size: 1rem; line-height: 1.62; }
   .hero-actions { margin-top: 25px; display: grid; grid-template-columns: 1fr; }
