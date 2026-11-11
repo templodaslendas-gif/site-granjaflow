@@ -108,15 +108,20 @@ export default function Home() {
       <JsonLd data={jsonLd} />
 
       <section className="hero" id="conteudo">
-        <div className="hero-copy">
-          <h1>Mais controle, mais resultado</h1>
-          <p className="hero-lead">Lotes, mortalidade, ração, custos e financeiro em uma única plataforma para a suinocultura</p>
-          <ContactCta />
-        </div>
-        <div className="hero-visual hero-poster">
-          <div className="visual-glow" />
-          <div className="hero-poster-frame">
-            <Image src="/images/granjaflow-gestao-inteligente.jpeg" alt="GranjaFlow sendo utilizado no ambiente de uma granja de suínos" width={800} height={800} sizes="(max-width: 900px) 90vw, 42vw" priority />
+        <div className="hero-video-poster" aria-hidden="true" />
+        <video className="hero-video" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" tabIndex={-1}>
+          <source media="(max-width: 700px) and (orientation: portrait)" src="/videos/granjaflow-campo-mobile.mp4" type="video/mp4" />
+          <source src="/videos/granjaflow-campo-desktop.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-video-overlay" aria-hidden="true" />
+
+        <div className="hero-content">
+          <span className="hero-eyebrow">GESTÃO INTELIGENTE PARA SUINOCULTURA</span>
+          <h1>Sua granja sob controle</h1>
+          <p className="hero-lead">Lotes, mortalidade, ração, custos e financeiro em uma única visão para decidir com mais clareza</p>
+          <div className="hero-actions">
+            <a className="button hero-primary-action" href={WHATSAPP_LINKS.product} target="_blank" rel="noreferrer"><WhatsAppIcon /> Conhecer o GranjaFlow</a>
+            <a className="hero-secondary-action" href={WHATSAPP_LINKS.questions} target="_blank" rel="noreferrer">Tirar dúvidas <ArrowIcon /></a>
           </div>
         </div>
       </section>
